@@ -30,7 +30,7 @@ from PySide6.QtTest import QTest
 from PySide6.QtGui import QWheelEvent
 from PySide6.QtCore import QPointF
 from PySide6.QtWidgets import QApplication
-import catmouse as core
+import main as core
 from glass_app import create_application, PALETTES
 
 messages = []

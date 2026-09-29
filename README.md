@@ -24,8 +24,8 @@ Windows and Python 3.11 are required.
 ```powershell
 py -3.11 -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe catmouse.py
-.venv\Scripts\python.exe -m PyInstaller --noconfirm catmouse.spec
+.venv\Scripts\python.exe main.py
+.venv\Scripts\python.exe -m PyInstaller --noconfirm main.spec
 ```
 
 The executable is written to `dist/cursor-mods.exe`.

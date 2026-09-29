@@ -13,10 +13,10 @@ os.environ['PATH'] = os.pathsep.join(str(p) for p in (
 ))
 
 a = Analysis(
-    ['catmouse.py'],
+    ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('assets', 'assets'), ('qml', 'qml'), ('cat.ico', '.'),
+    datas=[('assets', 'assets'), ('qml', 'qml'), ('mask.ico', '.'),
            ('LICENSE', '.'), ('THIRD_PARTY_NOTICES.md', '.'), ('licenses', 'licenses')],
     hiddenimports=['keyboard', 'win32com.client', 'pythoncom', 'PySide6.QtQuickControls2'],
     hookspath=[],
@@ -51,5 +51,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['cat.ico'],
+    icon=['mask.ico'],
 )

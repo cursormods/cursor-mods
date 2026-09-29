@@ -483,7 +483,7 @@ def create_application(core, safe_mode=False):
     application.setQuitOnLastWindowClosed(False)
     application.setOrganizationName("CursorMods")
     application.setStyle("Fusion")
-    application.setWindowIcon(QIcon(str(RESOURCE_ROOT / "cat.ico")))
+    application.setWindowIcon(QIcon(str(RESOURCE_ROOT / "mask.ico")))
     bridge = Bridge(core, safe_mode)
     engine = QQmlApplicationEngine()
     engine.rootContext().setContextProperty("backend", bridge)

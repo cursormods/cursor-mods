@@ -255,8 +255,8 @@ class AppIntegrationTests(IsolatedTest):
     def setUp(self):
         super().setUp()
         os.environ["CURSORMODS_DATA_DIR"] = str(self.root / "data")
-        import catmouse
-        self.core = importlib.reload(catmouse)
+        import main
+        self.core = importlib.reload(main)
         self.versions = self.root / "versions"
         self.core.ROBLOX_VERSIONS_DIR = str(self.versions)
         self.core.ROBLOX_BACKUP_DIR = str(self.root / "backups")
